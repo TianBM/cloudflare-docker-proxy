@@ -1,5 +1,6 @@
 name = "cloudflare-docker-proxy"
 compatibility_date = "2023-12-01"
+main = "dist/main.ts"
 
 [dev]
 ip = "0.0.0.0"
@@ -12,7 +13,7 @@ CUSTOM_DOMAIN = "libcuda.so"
 [env.dev.vars]
 MODE = "debug"
 TARGET_UPSTREAM = "https://registry-1.docker.io"
-CUSTOM_DOMAIN = "exmaple.com"
+CUSTOM_DOMAIN = "dd.junyou.me"
 
 [env.production]
 name = "cloudflare-docker-proxy"
@@ -32,7 +33,7 @@ TARGET_UPSTREAM = ""
 
 [env.staging]
 name = "cloudflare-docker-proxy-staging"
-# route = { pattern = "docker-staging.libcuda.so", custom_domain = true }
+route = { pattern = "dd.junyou.me", custom_domain = true }
 
 [env.staging.vars]
 MODE = "staging"
