@@ -205,6 +205,8 @@ dist
 !.yarn/plugins
 !.yarn/sdks
 !.yarn/versions
+*-lock.json
+*.lock
 
 # if you are NOT using Zero-installs, then:
 # comment the following lines
